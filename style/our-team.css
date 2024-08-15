@@ -1,0 +1,67 @@
+.coach-cont {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8rem;
+}
+.our-team-section {
+  padding-top: 10rem;
+}
+.our-team-title {
+  margin-bottom: 5rem;
+}
+.coach-image {
+  min-width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+.coach-image.first {
+  background-image: url("../content/Coach_Chris.jpg");
+}
+.coach-image.second {
+  background-image: url("../content/Coach_Ame.jpg");
+}
+.coach-preferences {
+  padding: 0 3rem;
+  width: 100%;
+  position: relative;
+}
+.coach-position {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.coach-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.coach-qualifications-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.coach-qualification-cont {
+  background-color: #ff7315;
+  padding: 0.3rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.coach-qualification-cont .text {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.coach-qualification-cont .icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../content/medal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

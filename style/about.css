@@ -1,0 +1,19 @@
+.about {
+  margin: 5rem 0rem;
+}
+.about-title {
+  margin-bottom: 0rem;
+}
+.content-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text {
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding-right: 15rem;
+}
+.about-image {
+  width: 35%;
+}

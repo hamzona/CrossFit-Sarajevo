@@ -1,0 +1,29 @@
+.content-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.more-info-title {
+  margin-bottom: 3rem;
+}
+.content-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.text-container {
+  width: 100%;
+}
+.text-container .text {
+  font-size: 1.3rem;
+}
+.image-container {
+  width: 100%;
+}
+.content-container.img-right img {
+  padding-left: 5rem;
+}
+.content-container.img-left img {
+  padding-right: 15rem;
+}

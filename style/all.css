@@ -1,0 +1,38 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+*,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: inter;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0rem 5rem;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+}
