@@ -15,8 +15,11 @@
 .text-container {
   width: 100%;
 }
-.text-container .text {
+.text-container .text, .text-container ul li {
   font-size: 1.3rem;
+}
+.text-container ul li span {
+  font-weight: 800;
 }
 .image-container {
   width: 100%;
