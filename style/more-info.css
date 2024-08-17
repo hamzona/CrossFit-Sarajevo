@@ -1,3 +1,7 @@
+.more-info-section {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+}
 .content-container {
   display: flex;
   align-items: center;
@@ -15,11 +19,18 @@
 .text-container {
   width: 100%;
 }
-.text-container .text, .text-container ul li {
-  font-size: 1.3rem;
+.text-container .text,
+.text-container ul li {
+  font-size: 1.1rem;
+}
+.text-container ul li {
+  margin: 5px 0;
+}
+.text-container ul {
+  padding: 2rem 3rem;
 }
 .text-container ul li span {
-  font-weight: 800;
+  font-weight: 700;
 }
 .image-container {
   width: 100%;
@@ -29,4 +40,17 @@
 }
 .content-container.img-left img {
   padding-right: 15rem;
+}
+.content-container.img-left.last {
+  margin-bottom: 8rem;
+}
+.last-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.last-content-container .text {
+  max-width: 700px;
 }

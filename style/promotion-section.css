@@ -1,0 +1,19 @@
+.promotion-section {
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+.promotion-title-container {
+  text-align: center;
+  width: 100vw;
+  background-color: #ff7315;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.promotion-section .promotion-title {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.promotion-section img {
+  height: 60px;
+}
