@@ -42,6 +42,7 @@
   background-color: white;
   border-radius: 4px;
   padding: 0 1rem;
+  box-sizing: border-box;
 }
 .input-section-cont {
   display: flex;
@@ -127,5 +128,8 @@
   .submit-button {
     width: 100%;
     padding: 0.6rem 0;
+  }
+  .contact-form {
+    padding: 1rem;
   }
 }
