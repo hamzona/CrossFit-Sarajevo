@@ -16,7 +16,7 @@
   color: white;
   font-weight: 900;
   font-size: 6rem;
-  text-wrap: nowrap;
+  text-align: center;
 }
 .hero-subtitle {
   color: white;
@@ -76,19 +76,29 @@
     font-size: 1rem;
   }
   .btn {
-    padding: 0.6rem 1.2rem;
+    margin: 0.2rem 0;
     font-size: 0.8rem;
   }
 }
 
 @media (max-width: 400px) {
-  .hero-title {
-    font-size: 1.7rem;
-  }
-  .hero-subtitle {
-    font-size: 0.8rem;
+  .buttons-container {
+    margin-top: 3.5rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
   .btn {
-    margin: 1rem 0.5rem;
+    padding: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
   }
 }
