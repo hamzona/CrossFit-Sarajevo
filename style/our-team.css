@@ -99,6 +99,9 @@
   .coach-preferences {
     padding-left: 1rem;
   }
+  .coach-qualification-cont .text {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 500px) {
