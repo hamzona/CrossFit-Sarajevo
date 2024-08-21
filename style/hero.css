@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-wrap: nowrap;
 }
 .hero-title {
   color: white;
