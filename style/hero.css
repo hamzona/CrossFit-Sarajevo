@@ -11,17 +11,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-wrap: nowrap;
 }
 .hero-title {
   color: white;
   font-weight: 900;
   font-size: 6rem;
+  text-wrap: nowrap;
 }
 .hero-subtitle {
   color: white;
   font-weight: 700;
   font-size: 2rem;
+  text-align: center;
 }
 .buttons-container {
   display: flex;
@@ -82,7 +83,7 @@
 
 @media (max-width: 400px) {
   .hero-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .hero-subtitle {
     font-size: 0.8rem;
