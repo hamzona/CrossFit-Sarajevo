@@ -15,6 +15,7 @@
   align-items: center;
   padding: 3rem;
   border-radius: 4px;
+  position: relative;
 }
 .two-section-container {
   width: 100%;
@@ -60,11 +61,13 @@
   all: unset;
   background-color: white;
   height: 100%;
+  width: 100%;
   border-radius: 4px;
   resize: none;
   padding: 1rem;
   font-weight: 500;
   font-size: 1rem;
+  box-sizing: border-box;
 }
 .submit-button {
   all: unset;
@@ -122,7 +125,7 @@
 
 @media (max-width: 360px) {
   .submit-button {
-    width: max-content;
-    padding: 0.6rem 2rem;
+    width: 100%;
+    padding: 0.6rem 0;
   }
 }
