@@ -6,6 +6,9 @@
 }
 .contact-form {
   background-image: url("../content/contact-us-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,11 +20,14 @@
   width: 100%;
   display: flex;
 }
+
 .two-sections-contact-us {
   width: 100%;
-  padding-right: 2rem;
   display: flex;
   flex-direction: column;
+}
+.two-sections-contact-us.first {
+  padding-right: 2rem;
 }
 .contact-label {
   color: white;
@@ -51,6 +57,8 @@
   flex-direction: column;
 }
 .message-input {
+  all: unset;
+  background-color: white;
   height: 100%;
   border-radius: 4px;
   resize: none;
@@ -70,4 +78,50 @@
   border-radius: 8px;
   width: 450px;
   margin-top: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .contact-label {
+    font-size: 1.2rem;
+  }
+  .submit-button {
+    font-size: 1.2;
+    padding: 0.8rem;
+  }
+}
+@media (max-width: 750px) {
+  .two-section-container {
+    flex-direction: column;
+  }
+  .two-sections-contact-us.first {
+    padding: 0rem;
+  }
+  .input-section-cont.last {
+    margin-bottom: 2rem;
+  }
+  .message-input {
+    min-height: 200px;
+  }
+  .submit-button {
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 200px;
+  }
+  .contact-label {
+    font-size: 1rem;
+  }
+  .contact-input {
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .submit-button {
+    width: max-content;
+    padding: 0.6rem 2rem;
+  }
 }

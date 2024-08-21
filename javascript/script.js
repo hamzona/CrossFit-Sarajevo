@@ -55,18 +55,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/*NAVBAR*/
+/*NAVBAR MOBILE*/
 
-// const navBar = document.querySelector(".navbar");
-// const navBarLogo = document.querySelector(".logo");
+//Adding class active to nav menu button and adding class to logo
+let navbarMenuButton = document.querySelector(".nav-menu-button");
+let logo = document.querySelector(".navbar .logo");
+let navbarMenuCont = document.querySelector(".mobile-nav-container");
 
-// document.addEventListener("scroll", () => {
-//   const height = window.innerHeight;
-//   const scroll = window.scrollY;
-//   if (scroll > height / 4) {
-//     console.log(navBar);
-//     navBar.classList.add("active-nav");
-//   } else {
-//     navBar.classList.remove("active-nav");
-//   }
-// });
+let navbarMenu_active = false;
+navbarMenuButton.addEventListener("click", () => {
+  if (navbarMenu_active) {
+    navbarMenuButton.classList.remove("active");
+    logo.classList.remove("active");
+    navbarMenuCont.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  } else {
+    navbarMenuButton.classList.add("active");
+    logo.classList.add("active");
+    navbarMenuCont.classList.add("active");
+    document.body.classList.add("no-scroll");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Use 'auto' for instant scrolling
+    });
+  }
+
+  navbarMenu_active = !navbarMenu_active;
+});

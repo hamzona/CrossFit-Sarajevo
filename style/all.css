@@ -14,11 +14,14 @@ h1 {
   padding: 0px;
 }
 
-html {
+body {
   font-family: inter;
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
 .section {
   width: 100vw;
   display: flex;
@@ -35,4 +38,29 @@ html {
 .title {
   font-size: 3rem;
   font-weight: 800;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .main-container {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 2rem;
+  }
+  .main-container {
+    padding: 0 1.3rem;
+  }
 }

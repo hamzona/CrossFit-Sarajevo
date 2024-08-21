@@ -17,3 +17,28 @@
 .promotion-section img {
   height: 60px;
 }
+
+@media (max-width: 1000px) {
+  .promotion-section .promotion-title {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 750px) {
+  .promotion-section .promotion-title {
+    font-size: 1.2rem;
+  }
+  .promotion-section img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promotion-section img {
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .promotion-section .promotion-title {
+    font-size: 1rem;
+  }
+}
