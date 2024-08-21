@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0rem;
   overflow: clip;
 }
 .gallery-title {
@@ -60,6 +59,7 @@
 }
 .dots {
   position: absolute;
+  z-index: 2;
   bottom: -80px;
   left: 0;
   width: 100%;
@@ -129,5 +129,20 @@
 @media (max-width: 400px) {
   .dots .active {
     width: 15px;
+  }
+  .gallery-title {
+    margin-bottom: 2rem;
+  }
+  .gallery {
+    padding: 0px;
+  }
+  .dots {
+    bottom: 4%;
+  }
+  .item {
+    background-color: #232020;
+  }
+  .item img {
+    border-radius: 0px;
   }
 }
