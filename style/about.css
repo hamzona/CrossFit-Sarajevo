@@ -53,4 +53,7 @@
   .about-image {
     width: 100%;
   }
+  .about {
+    margin-bottom: 10rem;
+  }
 }

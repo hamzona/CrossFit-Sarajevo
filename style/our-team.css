@@ -121,12 +121,16 @@
 
 @media (max-width: 400px) {
   .our-team-section {
-    padding-top: 5rem;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
   }
   .our-team-title {
     margin-bottom: 2rem;
   }
   .coach-cont {
     margin-bottom: 3rem;
+  }
+  .coach-position {
+    font-size: 1.4rem;
   }
 }
