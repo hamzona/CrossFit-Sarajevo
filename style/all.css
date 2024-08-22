@@ -14,7 +14,8 @@ h1 {
   padding: 0px;
 }
 
-body {
+body,
+html {
   font-family: inter;
   overflow-x: hidden;
 }
