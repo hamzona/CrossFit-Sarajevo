@@ -129,7 +129,7 @@
 @media (max-width: 400px) {
   .list .item {
     width: 100vw;
-    margin-right: 3rem;
+    margin-right: 10rem;
   }
   .dots .active {
     width: 15px;
