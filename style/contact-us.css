@@ -132,4 +132,10 @@
   .contact-form {
     padding: 1rem;
   }
+  .contact-us-title {
+    margin-bottom: 2rem;
+  }
+  .contact-us-section {
+    margin-bottom: 6rem;
+  }
 }

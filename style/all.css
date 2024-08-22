@@ -59,6 +59,7 @@ body {
 @media (max-width: 400px) {
   .title {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
   .main-container {
     padding: 0 1.3rem;

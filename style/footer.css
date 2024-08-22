@@ -124,4 +124,10 @@
   .content-section-footer .links a {
     margin: 0.3rem 0;
   }
+  .copyright-container h2 {
+    font-size: 0.7rem;
+  }
+  .footer-title {
+    text-wrap: nowrap;
+  }
 }

@@ -118,3 +118,15 @@
     margin-top: 3rem;
   }
 }
+
+@media (max-width: 400px) {
+  .our-team-section {
+    padding-top: 5rem;
+  }
+  .our-team-title {
+    margin-bottom: 2rem;
+  }
+  .coach-cont {
+    margin-bottom: 3rem;
+  }
+}

@@ -115,18 +115,22 @@
 
   .slider {
     width: 100%;
-    height: 200px;
+    height: 400px;
   }
   .list .item {
-    height: 200px;
+    height: 400px;
   }
 
   .item img {
-    height: 200px;
+    height: 400px;
   }
 }
 
 @media (max-width: 400px) {
+  .list .item {
+    width: 100vw;
+    margin-right: 10rem;
+  }
   .dots .active {
     width: 15px;
   }
@@ -138,11 +142,5 @@
   }
   .dots {
     bottom: 4%;
-  }
-  .item {
-    background-color: #232020;
-  }
-  .item img {
-    border-radius: 0px;
   }
 }
