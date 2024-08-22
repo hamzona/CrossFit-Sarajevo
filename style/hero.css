@@ -29,6 +29,10 @@
   justify-content: center;
   align-items: center;
 }
+.buttons-container a {
+  width: 100%;
+  display: flex;
+}
 .btn {
   all: unset;
   padding: 1rem 2rem;

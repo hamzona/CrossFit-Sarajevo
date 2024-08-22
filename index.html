@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/more-info.css" />
     <link rel="stylesheet" href="./style/promotion-section.css" />
     <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/video.css" />
     <!-- JAVASCRIPT -->
     <script src="./javascript/script.js" defer></script>
     <!-- FONTS -->
@@ -24,6 +25,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "YoJQT7T-j3hlbJsaX",
+        });
+      })();
+    </script>
     <!-- TITLE -->
     <title>CrossFit Sarajevo</title>
   </head>
@@ -33,9 +46,9 @@
         <div class="main-container nav">
           <div class="logo"></div>
           <div class="links-container">
-            <a class="link">ABOUT</a>
-            <a class="link">TIMETABLE</a>
-            <a class="link contact">CONTACT US</a>
+            <a href="#about" class="link">ABOUT</a>
+            <a href="#timetable" class="link">TIMETABLE</a>
+            <a href="#footer" class="link contact">CONTACT US</a>
           </div>
           <div class="nav-menu-button">
             <div class="first"></div>
@@ -44,30 +57,49 @@
           </div>
           <div class="mobile-nav-container">
             <div class="mobile-links-container">
-              <a>ABOUT</a>
-              <a>GALLERY</a>
-              <a>TIMETABLE</a>
-              <a>OUR TEAM</a>
-              <a>MORE INFORMATION</a>
-              <a>CONTACT</a>
+              <a href="#about">ABOUT US</a>
+              <a href="#gallery">GALLERY</a>
+              <a href="#timetable">TIMETABLE</a>
+              <a href="#our-team">OUR TEAM</a>
+              <a href="#more-info">MORE INFORMATION</a>
+              <a href="#footer">CONTACT</a>
             </div>
-            <button class="mobile-button">START FOR FREE</button>
+            <a class="mobile-button-link" href="#contact-us">
+              <button class="mobile-button">START FOR FREE</button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="section hero-section">
+      <div id="home" class="section hero-section">
         <div class="main-container hero">
           <h1 class="hero-title">CrossFit Sarajevo</h1>
           <h1 class="hero-subtitle">
             Life begins at the end of your comfort zone
           </h1>
           <div class="buttons-container">
-            <button class="btn left">START FOR FREE</button>
+            <a href="#contact-us">
+              <button class="btn left">START FOR FREE</button></a
+            >
             <button class="btn right">VIDEO</button>
           </div>
         </div>
       </div>
-      <div class="section about-section">
+      <div class="video-container">
+        <div class="cancle-icon">&#x2715;</div>
+        <!-- width="560"
+          height="315" -->
+        <div class="main-container video">
+          <iframe
+            src="https://www.youtube.com/embed/tzD9BkXGJ1M?si=Okr-CPM2yj6yjofV"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div id="about" class="section about-section">
         <div class="main-container about">
           <h1 class="title about-title">About us</h1>
           <div class="content-cont">
@@ -89,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="section gallery-section">
+      <div id="gallery" class="section gallery-section">
         <div class="main-container gallery">
           <h1 class="title gallery-title">Gallery</h1>
           <div class="slider">
@@ -145,7 +177,7 @@
         </div>
       </div>
 
-      <div class="section our-team-section">
+      <div id="our-team" class="section our-team-section">
         <div class="main-container our-team">
           <h1 class="title our-team-title">Our team</h1>
           <div class="coach-cont">
@@ -197,7 +229,7 @@
         </div>
       </div>
 
-      <div class="section timetable-section">
+      <div id="timetable" class="section timetable-section">
         <div class="main-container timetable">
           <h1 class="title timetable-title">Timetable</h1>
           <iframe
@@ -209,7 +241,7 @@
         </div>
       </div>
 
-      <div class="section more-info-section">
+      <div id="more-info" class="section more-info-section">
         <div class="main-container more-info">
           <h1 class="title more-info-title">More information</h1>
           <div class="content-container img-right">
@@ -328,23 +360,23 @@
         </div>
         <img src="./content/promotion-arrow.png" alt="arrow" />
       </div>
-      <div class="section contact-us-section">
+      <div id="contact-us" class="section contact-us-section">
         <div class="main-container contact-us">
           <h1 class="title contact-us-title">Contact us</h1>
-          <form class="contact-form" action="">
+          <form onsubmit="sendEmail(event)" class="contact-form" action="POST">
             <div class="two-section-container">
               <div class="two-sections-contact-us first">
                 <div class="input-section-cont">
                   <label class="contact-label" for="name">Name</label>
-                  <input type="text" class="contact-input" />
+                  <input id="name" type="text" class="contact-input" />
                 </div>
                 <div class="input-section-cont">
                   <label class="contact-label" for="name">Email</label>
-                  <input type="text" class="contact-input" />
+                  <input id="email" type="email" class="contact-input" />
                 </div>
                 <div class="input-section-cont last">
                   <label class="contact-label" for="name">Phone</label>
-                  <input type="text" class="contact-input" />
+                  <input id="phone" type="number" class="contact-input" />
                 </div>
               </div>
               <div class="two-sections-contact-us second">
@@ -356,11 +388,11 @@
                 ></textarea>
               </div>
             </div>
-            <button class="submit-button">SUBMIT</button>
+            <button type="submit" class="submit-button">SUBMIT</button>
           </form>
         </div>
       </div>
-      <div class="section footer-section">
+      <div id="footer" class="section footer-section">
         <div class="main-container footer">
           <div class="content-and-map-container">
             <div class="content-container-footer">
@@ -369,25 +401,30 @@
                 <div class="content-section-footer">
                   <h1 class="content-title">Navigation</h1>
                   <div class="links">
-                    <a href="">Home</a>
-                    <a href="">About us </a>
-                    <a href="">Timetable</a>
-                    <a href="">More information</a>
-                    <a href="">Contact us</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About us </a>
+                    <a href="#timetable">Timetable</a>
+                    <a href="#more-info">More information</a>
+                    <a href="#contact-us">Contact us</a>
                   </div>
                 </div>
                 <div class="content-section-footer">
                   <h1 class="content-title">Social</h1>
                   <div class="links">
-                    <a href="">Instagram</a>
-                    <a href="">Facebook</a>
+                    <a href="https://www.instagram.com/crossfitsarajevo/"
+                      >Instagram</a
+                    >
+                    <a
+                      href="https://www.facebook.com/crossfitsarajevo?mibextid=LQQJ4d&rdid=trI65I5uGhmJ952O&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FYnEDY17tCzT7R3AW%2F%3Fmibextid%3DLQQJ4d"
+                      >Facebook</a
+                    >
                   </div>
                 </div>
                 <div class="content-section-footer">
                   <h1 class="content-title">Contact</h1>
                   <div class="links">
-                    <a href="">Email</a>
-                    <a href="">Phone </a>
+                    <a href="mailto:info@crossfitsarajevo.com">Email</a>
+                    <a href="tel:+387 61 691 483">Phone </a>
                   </div>
                 </div>
               </div>

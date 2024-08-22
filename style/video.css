@@ -1,0 +1,32 @@
+.video-container {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.video-container.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.cancle-icon {
+  position: absolute;
+  right: 10rem;
+  top: 3rem;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  transition: all 300ms;
+}
+.cancle-icon:active {
+  color: #ff7315;
+}

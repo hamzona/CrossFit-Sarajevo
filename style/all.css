@@ -18,6 +18,10 @@ body,
 html {
   font-family: inter;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+a {
+  all: unset;
 }
 .overflow-x-on-mobile-phone-hidden {
   width: 100vw;

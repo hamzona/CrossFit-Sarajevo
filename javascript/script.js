@@ -82,3 +82,56 @@ navbarMenuButton.addEventListener("click", () => {
 
   navbarMenu_active = !navbarMenu_active;
 });
+
+let links = document.querySelectorAll(".mobile-links-container a");
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarMenuButton.classList.remove("active");
+    logo.classList.remove("active");
+    navbarMenuCont.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  });
+});
+
+let navStartMobileButton = document.querySelector(".mobile-button-link");
+
+navStartMobileButton.addEventListener("click", () => {
+  navbarMenuButton.classList.remove("active");
+  logo.classList.remove("active");
+  navbarMenuCont.classList.remove("active");
+  document.body.classList.remove("no-scroll");
+});
+/*VIDEO*/
+
+let videoButton = document.querySelector(".buttons-container .btn.right");
+let videoSection = document.querySelector(".video-container");
+let cancleVideoSection = document.querySelector(".cancle-icon");
+
+videoButton.addEventListener("click", () => {
+  videoSection.classList.add("visible");
+  console.log("aaaaaaaaaaa");
+});
+
+cancleVideoSection.addEventListener("click", () => {
+  videoSection.classList.remove("visible");
+});
+
+//EMAILJS
+
+sendEmail = (e) => {
+  e.preventDefault();
+  let params = {
+    name: document.querySelector(".contact-form #name").value,
+    message: document.querySelector(".contact-form #message").value,
+    email: document.querySelector(".contact-form #email").value,
+    phone: document.querySelector(".contact-form #phone").value,
+  };
+  emailjs
+    .send("service_sc1g2ka", "template_rr5g8qu", params)
+    .then(alert("Email is sent!!!"));
+
+  document.querySelector(".contact-form #name").value = "";
+  document.querySelector(".contact-form #message").value = "";
+  document.querySelector(".contact-form #email").value = "";
+  document.querySelector(".contact-form #phone").value = "";
+};
