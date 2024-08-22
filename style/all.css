@@ -19,7 +19,10 @@ html {
   font-family: inter;
   overflow-x: hidden;
 }
-
+.overflow-x-on-mobile-phone-hidden {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .no-scroll {
   overflow: hidden;
 }
