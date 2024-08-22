@@ -109,7 +109,6 @@ let cancleVideoSection = document.querySelector(".cancle-icon");
 
 videoButton.addEventListener("click", () => {
   videoSection.classList.add("visible");
-  console.log("aaaaaaaaaaa");
 });
 
 cancleVideoSection.addEventListener("click", () => {
