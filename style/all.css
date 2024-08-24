@@ -78,6 +78,12 @@ a {
   }
 }
 @media (max-width: 400px) {
+  .reveal {
+    transform: translateY(-10%);
+  }
+  .element-revealed {
+    transform: translateY(0%);
+  }
   .title {
     font-size: 2rem;
     margin-bottom: 1rem;
