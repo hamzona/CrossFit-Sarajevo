@@ -30,3 +30,26 @@
 .cancle-icon:active {
   color: #ff7315;
 }
+
+@media (max-height: 850px) {
+  .cancle-icon {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .cancle-icon {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+  .video-container iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-container iframe {
+    height: 200px;
+  }
+}
