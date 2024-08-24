@@ -65,12 +65,15 @@
 @keyframes bounce {
   0% {
     transform: scale(1);
+    background-color: #ff7315;
   }
   50% {
     transform: scale(1.2);
+    background-color: #91420c;
   }
   100% {
     transform: scale(1);
+    background-color: #ff7315;
   }
 }
 
