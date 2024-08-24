@@ -38,11 +38,21 @@
 .coach-position {
   font-weight: 700;
   margin-bottom: 12px;
+  opacity: 0;
+  transition: 400ms ease-out;
+}
+.coach-position-reveal {
+  opacity: 1;
 }
 .coach-name {
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 3rem;
+  opacity: 0;
+  transition: 400ms ease-out;
+}
+.coach-name-reveal {
+  opacity: 1;
 }
 .coach-qualifications-list {
   height: 100%;

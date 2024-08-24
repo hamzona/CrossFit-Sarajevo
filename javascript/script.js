@@ -37,24 +37,6 @@ dots.forEach((dot, key) => {
   });
 });
 
-/*PRELOAD IMAGES*/
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".slider .list img");
-  let imagesLoaded = 0;
-  const totalImages = images.length;
-
-  images.forEach((img) => {
-    img.addEventListener("load", () => {
-      imagesLoaded += 1;
-      if (imagesLoaded === totalImages) {
-        // Initialize slider after all images are loaded
-        reloadSlider();
-      }
-    });
-    img.src = img.getAttribute("src"); // Trigger image load
-  });
-});
-
 /*NAVBAR MOBILE*/
 
 //Adding class active to nav menu button and adding class to logo
@@ -180,4 +162,32 @@ function checkReveal() {
 
   let ourTeamImages = document.querySelectorAll(".coach-image");
   helpCheckFunction(ourTeamImages, 200, "coach-image-reveal", windowHeight);
+
+  let ourTeamPositions = document.querySelectorAll(".coach-position");
+  helpCheckFunction(
+    ourTeamPositions,
+    150,
+    "coach-position-reveal",
+    windowHeight
+  );
+
+  let ourTeamNames = document.querySelectorAll(".coach-name");
+  helpCheckFunction(ourTeamNames, 150, "coach-name-reveal", windowHeight);
 }
+
+/* Button img slider */
+
+const buttons = document.querySelectorAll(".buttons button");
+console.log(buttons);
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    // Remove the class to reset the animation
+    button.classList.remove("animate");
+
+    // Trigger a reflow, flushing the CSS changes
+    void button.offsetWidth;
+
+    // Add the class back to trigger the animation
+    button.classList.add("animate");
+  });
+});
