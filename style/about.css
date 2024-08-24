@@ -18,9 +18,9 @@
   width: 35%;
   opacity: 0;
   transition: 500ms ease-in;
+  transition-delay: 400ms;
 }
 .about-image.img-revealed {
-  transition-delay: 400ms;
   opacity: 1;
 }
 @media (max-width: 1200px) {
@@ -45,6 +45,9 @@
 }
 
 @media (max-width: 550px) {
+  .about-image {
+    transition-delay: 0ms;
+  }
   .about-title {
     margin-bottom: 2rem;
   }

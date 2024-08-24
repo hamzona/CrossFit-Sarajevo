@@ -122,6 +122,9 @@
     align-items: start;
     flex-direction: column-reverse;
   }
+  .coach-image {
+    transition-delay: 0ms;
+  }
   .coach-preferences {
     padding: 0rem;
   }

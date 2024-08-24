@@ -112,6 +112,9 @@
   }
 }
 @media (max-width: 700px) {
+  .content-container img.img-revealed {
+    transition-delay: 0ms;
+  }
   .content-container.img-right {
     flex-direction: column;
   }
