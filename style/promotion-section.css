@@ -16,8 +16,16 @@
 
 .promotion-section img {
   height: 60px;
+  animation: arrow-animation 600ms ease-in-out infinite alternate;
 }
-
+@keyframes arrow-animation {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
 @media (max-width: 1000px) {
   .promotion-section .promotion-title {
     font-size: 1.6rem;

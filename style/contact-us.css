@@ -77,12 +77,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: #ff7315;
   border-radius: 8px;
-  width: 450px;
+  width: 300px;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  transition: 300ms ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #c55810;
+}
+.submit-button:active {
+  background-color: #411a00;
 }
 
 @media (max-width: 1200px) {

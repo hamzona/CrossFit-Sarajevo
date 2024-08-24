@@ -17,13 +17,41 @@
   font-weight: 900;
   font-size: 6rem;
   text-align: center;
+  transform: translateY(-30%);
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 .hero-subtitle {
   color: white;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: fadeInUpSub 1.5s ease-out forwards;
+  animation-delay: 500ms;
 }
+@keyframes fadeInUpSub {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .buttons-container {
   display: flex;
   justify-content: center;
@@ -34,23 +62,53 @@
   display: flex;
 }
 .btn {
+  --padding-y: 1rem;
+  --padding-x: 2rem;
   all: unset;
-  padding: 1rem 2rem;
+  padding: var(--padding-y) var(--padding-x);
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 900;
   color: white;
   margin: 2rem 1rem;
+  opacity: 0;
+  animation: button-animation 500ms ease-out forwards;
+  animation-delay: 1000ms;
+  cursor: pointer;
 }
+
+@keyframes button-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .left {
   background-color: #ff7315;
   color: black;
+  transition: all 700ms;
+}
+
+.left:hover {
+  transform: translateY(10%);
+  background-color: #c55810;
+}
+
+.left:active {
+  background-color: #411a00;
 }
 .right {
   background-color: rgba(0, 0, 0, 0.479);
   box-shadow: inset 0 0 0 3px #ff7315;
+  transition: all 700ms;
 }
-
+.right:hover {
+  background-color: rgba(0, 0, 0, 0.74);
+  transform: translateY(10%);
+}
 @media (max-width: 1200px) {
   .hero-title {
     font-size: 4.5rem;

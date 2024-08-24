@@ -16,8 +16,13 @@
 }
 .about-image {
   width: 35%;
+  opacity: 0;
+  transition: 500ms ease-in;
 }
-
+.about-image.img-revealed {
+  transition-delay: 400ms;
+  opacity: 1;
+}
 @media (max-width: 1200px) {
   .about-text {
     padding-right: 15rem;

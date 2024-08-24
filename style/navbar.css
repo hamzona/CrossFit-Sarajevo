@@ -45,8 +45,13 @@
 .link {
   font-weight: 800;
   font-size: 1.1rem;
+  transition: 300ms ease-out;
+  cursor: pointer;
 }
 
+.link:hover {
+  color: #ff7315;
+}
 @media (max-width: 1200px) {
   .links-container {
     width: 30%;

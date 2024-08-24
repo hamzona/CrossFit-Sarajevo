@@ -17,6 +17,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+  opacity: 0;
+  transition: all 400ms ease-in;
+  transition-delay: 1000ms;
+}
+.coach-image.coach-image-reveal {
+  opacity: 1;
 }
 .coach-image.first {
   background-image: url("../content/Coach_Chris.jpg");
@@ -52,6 +58,13 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
+  transform: translateX(10%);
+  opacity: 0;
+  transition: 600ms ease-out;
+}
+.coach-qualification-cont.item-revealed {
+  transform: translateX(0%);
+  opacity: 1;
 }
 .coach-qualification-cont .text {
   font-size: 1.1rem;

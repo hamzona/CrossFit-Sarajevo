@@ -134,3 +134,50 @@ sendEmail = (e) => {
   document.querySelector(".contact-form #email").value = "";
   document.querySelector(".contact-form #phone").value = "";
 };
+
+/* Reveal animations */
+
+window.addEventListener("scroll", checkReveal);
+
+helpCheckFunction = (elements, revealPoint, costumeClass, windowHeight) => {
+  /*Text animation */
+  for (let e of elements) {
+    let revealTop = e.getBoundingClientRect().top;
+
+    if (revealPoint < windowHeight - revealTop) {
+      e.classList.add(`${costumeClass}`);
+    }
+  }
+};
+
+function checkReveal() {
+  let windowHeight = window.innerHeight;
+
+  /*Text animation */
+  let reveals = document.querySelectorAll(".reveal");
+  helpCheckFunction(reveals, 150, "element-revealed", windowHeight);
+  /*About image */
+
+  let aboutImg = document.querySelector(".about img");
+  let revealTop = aboutImg.getBoundingClientRect().top;
+  let revealPoint = 300;
+
+  if (revealPoint < windowHeight - revealTop) {
+    aboutImg.classList.add("img-revealed");
+  }
+  /*More informtion */
+  let imgReveals = document.querySelectorAll(".content-container img");
+
+  helpCheckFunction(imgReveals, 300, "img-revealed", windowHeight);
+
+  /*Our team list */
+  let ourTeamList = document.querySelectorAll(
+    ".coach-qualifications-list .coach-qualification-cont"
+  );
+  helpCheckFunction(ourTeamList, 100, "item-revealed", windowHeight);
+
+  /*Our team image */
+
+  let ourTeamImages = document.querySelectorAll(".coach-image");
+  helpCheckFunction(ourTeamImages, 200, "coach-image-reveal", windowHeight);
+}

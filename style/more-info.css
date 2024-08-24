@@ -48,6 +48,13 @@
 }
 .content-container img {
   max-width: 50%;
+  opacity: 0;
+  transition: 500ms ease-in;
+}
+
+.content-container img.img-revealed {
+  transition-delay: 400ms;
+  opacity: 1;
 }
 .last-content-container {
   display: flex;
