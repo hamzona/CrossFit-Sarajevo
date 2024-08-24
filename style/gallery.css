@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .list .item {
     width: 100vw;
     margin-right: 10rem;

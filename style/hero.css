@@ -109,7 +109,7 @@
   background-color: rgba(0, 0, 0, 0.74);
   transform: translateY(10%);
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px ),( max-height:600px) {
   .hero-title {
     font-size: 4.5rem;
   }
@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px ) {
   .hero-title {
     font-size: 2.5rem;
   }
@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .buttons-container {
     margin-top: 3.5rem;
     flex-direction: column;
