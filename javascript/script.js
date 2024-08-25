@@ -191,3 +191,16 @@ buttons.forEach((button) => {
     button.classList.add("animate");
   });
 });
+
+/*On load hero */
+let heroT = document.querySelector(".hero-title");
+let heroST = document.querySelector(".hero-subtitle");
+let heroButtons = document.querySelectorAll(".btn");
+
+window.onload = () => {
+  heroT.classList.add("hero-title-anm");
+  heroST.classList.add("hero-subtitle-anm");
+  heroButtons.forEach((b) => {
+    b.classList.add("btn-anm");
+  });
+};

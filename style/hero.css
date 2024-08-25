@@ -19,6 +19,8 @@
   text-align: center;
   transform: translateY(-30%);
   opacity: 0;
+}
+.hero-title-anm {
   animation: fadeInUp 1.5s ease-out forwards;
 }
 @keyframes fadeInUp {
@@ -38,6 +40,9 @@
   text-align: center;
   opacity: 0;
   transform: translateY(-30%);
+}
+
+.hero-subtitle-anm {
   animation: fadeInUpSub 1.5s ease-out forwards;
   animation-delay: 500ms;
 }
@@ -72,11 +77,13 @@
   color: white;
   margin: 2rem 1rem;
   opacity: 0;
-  animation: button-animation 500ms ease-out forwards;
-  animation-delay: 1000ms;
+
   cursor: pointer;
 }
-
+.btn-anm {
+  animation: button-animation 500ms ease-out forwards;
+  animation-delay: 1000ms;
+}
 @keyframes button-animation {
   0% {
     opacity: 0;
@@ -109,7 +116,7 @@
   background-color: rgba(0, 0, 0, 0.74);
   transform: translateY(10%);
 }
-@media (max-width: 1200px ),( max-height:600px) {
+@media (max-width: 1200px), (max-height: 600px) {
   .hero-title {
     font-size: 4.5rem;
   }
@@ -130,7 +137,7 @@
   }
 }
 
-@media (max-width: 600px ) {
+@media (max-width: 600px) {
   .hero-title {
     font-size: 2.5rem;
   }
