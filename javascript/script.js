@@ -89,12 +89,25 @@ let videoButton = document.querySelector(".buttons-container .btn.right");
 let videoSection = document.querySelector(".video-container");
 let cancleVideoSection = document.querySelector(".cancle-icon");
 
+var stopVideo = function () {
+  var iframe = document.querySelector("iframe");
+  var video = document.querySelector("video");
+  if (iframe) {
+    var iframeSrc = iframe.src;
+    iframe.src = iframeSrc;
+  }
+  if (video) {
+    video.pause();
+  }
+};
 videoButton.addEventListener("click", () => {
   videoSection.classList.add("visible");
 });
 
 cancleVideoSection.addEventListener("click", () => {
+  console.log("radi");
   videoSection.classList.remove("visible");
+  stopVideo();
 });
 
 //EMAILJS
@@ -178,7 +191,6 @@ function checkReveal() {
 /* Button img slider */
 
 const buttons = document.querySelectorAll(".buttons button");
-console.log(buttons);
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     // Remove the class to reset the animation
