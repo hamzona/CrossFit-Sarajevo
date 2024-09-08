@@ -28,7 +28,7 @@
 }
 @media (max-width: 1000px) {
   .promotion-section .promotion-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 750px) {
@@ -47,10 +47,10 @@
 }
 @media (max-width: 400px) {
   .promotion-section .promotion-title {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   .promotion-section {
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
   }
 }

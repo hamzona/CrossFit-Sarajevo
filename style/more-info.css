@@ -1,6 +1,6 @@
 .more-info-section {
   margin-top: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 0rem;
 }
 .content-container {
   display: flex;
@@ -139,7 +139,7 @@
 @media (max-width: 400px) {
   .more-info-section {
     margin-top: 0rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
   }
   .more-info-title {
     margin-bottom: 2rem;

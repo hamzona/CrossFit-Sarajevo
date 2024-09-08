@@ -79,6 +79,7 @@
 .coach-qualification-cont .text {
   font-size: 1.1rem;
   font-weight: 700;
+  color: white;
 }
 .coach-qualification-cont .icon {
   width: 30px;
@@ -147,8 +148,8 @@
 
 @media (max-width: 400px) {
   .our-team-section {
-    padding-top: 10rem;
-    margin-bottom: 5rem;
+    padding-top: 5rem;
+    margin-bottom: 0rem;
   }
   .our-team-title {
     margin-bottom: 2rem;
