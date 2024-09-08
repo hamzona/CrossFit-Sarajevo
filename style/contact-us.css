@@ -132,8 +132,8 @@
   }
 }
 
-@media (max-width: 360px) {
-  .submit-button {
+@media (max-width: 400px) {
+  /*  .submit-button {
     width: 100%;
     padding: 0.6rem 0;
   }
@@ -142,7 +142,7 @@
   }
   .contact-us-title {
     margin-bottom: 2rem;
-  }
+  }*/
   .contact-us-section {
     margin-bottom: 6rem;
   }
