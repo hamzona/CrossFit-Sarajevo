@@ -39,7 +39,15 @@
   margin: 0.5rem 0;
   font-size: 1rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
+.content-section-footer .links a img {
+  width: 25px;
+  height: 25px;
+}
+
 .copyright-container {
   width: 100%;
   display: flex;
