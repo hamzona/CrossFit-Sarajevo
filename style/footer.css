@@ -73,15 +73,14 @@
   max-width: 100%;
 }
 
-.partner-logo {
-  width: 5rem;
-}
-
 .partner-container {
   margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 6px;
+}
+.partner-container img {
+  width: 120px;
 }
 
 @media (max-width: 1090px) {
@@ -130,8 +129,8 @@
   .content-container-footer {
     width: 100%;
   }
-  .partner-logo {
-    width: 3rem;
+  .partner-container img {
+    width: 80px;
   }
 }
 
