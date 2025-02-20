@@ -44,8 +44,8 @@
   gap: 6px;
 }
 .content-section-footer .links a img {
-  width: 25px;
-  height: 25px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .copyright-container {
@@ -71,6 +71,17 @@
 .map-container iframe {
   height: 400px;
   max-width: 100%;
+}
+
+.partner-logo {
+  width: 12rem;
+}
+
+.partner-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 @media (max-width: 1090px) {
@@ -118,6 +129,9 @@
 @media (max-width: 500px) {
   .content-container-footer {
     width: 100%;
+  }
+  .partner-logo {
+    width: 7rem;
   }
 }
 
