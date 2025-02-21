@@ -15,7 +15,7 @@
   padding-right: 15rem;
 }
 .about-image {
-  width: 35%;
+  width: 350px;
   opacity: 0;
   transition: 500ms ease-in;
   transition-delay: 400ms;
@@ -27,6 +27,9 @@
   .about-text {
     padding-right: 15rem;
     font-size: 1.4;
+  }
+  .about-image {
+    width: 250px;
   }
 }
 
