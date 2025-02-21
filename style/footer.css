@@ -83,6 +83,10 @@
   width: 120px;
 }
 
+.footer-title {
+  font-size: 2.2rem;
+}
+
 @media (max-width: 1090px) {
   .content-container-footer {
     padding-right: 2rem;
@@ -135,6 +139,9 @@
 }
 
 @media (max-width: 400px) {
+  .footer-title {
+    font-size: 1.5rem;
+  }
   .content-container-footer .content-title {
     font-size: 0.9rem;
   }
@@ -148,7 +155,7 @@
   .copyright-container h2 {
     font-size: 0.7rem;
   }
-  .footer-title {
+  /*.footer-title {
     text-wrap: nowrap;
-  }
+  }*/
 }
