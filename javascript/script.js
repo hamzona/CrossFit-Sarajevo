@@ -121,7 +121,7 @@ sendEmail = (e) => {
     phone: document.querySelector(".contact-form #phone").value,
   };
   emailjs
-    .send("service_5o1rlo8", "template_0snnktb", params)
+    .send("service_8bsds0t", "template_rtu9ese", params)
     .then(alert("Email sent successfully! Thank you for reaching out."));
 
   document.querySelector(".contact-form #name").value = "";
