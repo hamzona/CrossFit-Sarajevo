@@ -30,6 +30,16 @@
 .coach-image.second {
   background-image: url("../content/Coach_Ame.jpg");
 }
+.coach-image.third {
+  background-image: url("../content/Zerin.jpg");
+}
+.coach-image.fourth {
+  background-image: url("../content/Irma.jpg");
+}
+.coach-image.fifth {
+  background-image: url("../content/Jasmin.webp");
+}
+
 .coach-preferences {
   padding-left: 3rem;
   width: 100%;
@@ -142,6 +152,9 @@
     width: 100%;
     height: 300px;
     margin-top: 3rem;
+  }
+  .coach-image.fifth {
+    display: none;
   }
 }
 
