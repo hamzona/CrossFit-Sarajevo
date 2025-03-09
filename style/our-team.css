@@ -1,7 +1,7 @@
 .coach-cont {
   width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-bottom: 8rem;
 }
 .our-team-section {
@@ -57,7 +57,7 @@
 .coach-name {
   font-size: 1.3rem;
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   opacity: 0;
   transition: 400ms ease-out;
 }
