@@ -166,6 +166,6 @@
     padding: 0.45rem 0.9rem;
   }
   .membership-section {
-    padding: clamp(2rem, 7vw, 4rem) 0 2rem;
+    padding: clamp(2rem, 7vw, 4rem) 0 1rem;
   }
 }
