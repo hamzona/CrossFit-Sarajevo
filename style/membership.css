@@ -28,27 +28,26 @@
 
 .membership-card {
   min-width: 0;
-  padding: 2rem 2.25rem;
+  padding: 1.8rem 2rem;
   background: #ffffff;
   border: 1.5px solid #d9dce1;
-  border-radius: 20px;
-  box-shadow: 0 6px 12px rgba(17, 17, 17, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.08);
 }
 
 .membership-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .membership-plan-title {
   position: relative;
   margin: 0;
-  padding-left: 1.5rem;
-  font-size: clamp(1.375rem, 3.75vw, 2.625rem);
-  font-weight: 750;
-  line-height: 1.15;
+  padding-left: 1.35rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .membership-plan-title::before {
@@ -57,27 +56,26 @@
   top: 0.05em;
   bottom: 0.05em;
   left: 0;
-  width: 5px;
+  width: 4px;
   border-radius: 999px;
   background: var(--membership-accent);
 }
 
 .membership-card-body {
-  margin-top: 1.25rem;
+  margin-top: 1.125rem;
 }
 
 .membership-card-body .membership-price {
-  margin: 0 0 0.875rem;
+  margin: 0 0 0.8rem;
   color: var(--membership-accent);
-  font-size: clamp(1.5rem, 3.93vw, 2.75rem);
-  font-weight: 750;
+  font-size: 1.3rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 
 .membership-card-body p {
   margin: 0;
-  font-size: clamp(1rem, 2.5vw, 1.75rem);
-  line-height: 1.3;
+  font-size: 1.1rem;
 }
 
 .membership-card-body p + p:not(.membership-price) {
@@ -86,40 +84,53 @@
 
 .membership-card.popular-plan {
   margin-top: 3rem;
-  padding: 2rem 2.5rem 2.25rem;
+  padding: 1.8rem 2.25rem 2rem;
   border: 3px solid var(--membership-accent);
-  border-radius: 24px;
+  border-radius: 22px;
 }
 
 .popular-plan .membership-plan-title {
-  padding-left: 2rem;
-  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  padding-left: 1.8rem;
 }
 
 .popular-plan .membership-plan-title::before {
-  width: 6px;
+  width: 5px;
 }
 
 .popular-badge {
   flex-shrink: 0;
-  padding: 0.55rem 1.75rem;
+  padding: 0.5rem 1.6rem;
   border-radius: 999px;
   background: #ffe0c7;
   color: var(--membership-accent);
-  font-size: clamp(1rem, 2.7vw, 2rem);
-  font-weight: 750;
-  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
 }
 
-.popular-plan .membership-price {
-  font-size: clamp(1.75rem, 4.5vw, 3.125rem);
+@media (max-width: 1200px) {
+  .membership-plan-title {
+    font-size: 1.8rem;
+  }
+
+  .membership-card-body p {
+    font-size: 1rem;
+  }
 }
 
-.popular-plan .membership-card-body p:not(.membership-price) {
-  font-size: clamp(1rem, 2.7vw, 1.875rem);
-  line-height: 1.4;
+@media (max-width: 900px) {
+  .membership-plan-title {
+    font-size: 1.4rem;
+  }
+
+  .membership-card-body .membership-price {
+    font-size: 1.1rem;
+  }
+
+  .membership-card-body p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -133,27 +144,14 @@
   }
 
   .membership-card {
-    padding: 1.5rem;
-    border-radius: 18px;
-  }
-
-  .membership-plan-title {
-    font-size: clamp(1.375rem, 4.5vw, 2rem);
-  }
-
-  .membership-card-body .membership-price {
-    font-size: clamp(1.5rem, 4.75vw, 2.125rem);
-  }
-
-  .membership-card-body p {
-    font-size: clamp(1rem, 2.75vw, 1.25rem);
-    line-height: 1.5;
+    padding: 1.35rem;
+    border-radius: 16px;
   }
 
   .membership-card.popular-plan {
     margin-top: 1.75rem;
-    padding: 1.5rem;
-    border-radius: 20px;
+    padding: 1.35rem;
+    border-radius: 18px;
   }
 
   .popular-header {
@@ -161,17 +159,10 @@
   }
 
   .popular-plan .membership-plan-title {
-    padding-left: 1.5rem;
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    padding-left: 1.35rem;
   }
 
   .popular-badge {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  .popular-plan .membership-card-body p:not(.membership-price) {
-    font-size: clamp(1rem, 2.75vw, 1.25rem);
-    line-height: 1.5;
+    padding: 0.45rem 0.9rem;
   }
 }
