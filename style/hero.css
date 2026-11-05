@@ -1,0 +1,175 @@
+.hero-section {
+  height: 100vh;
+  background-image: url("../content/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  color: white;
+  font-weight: 900;
+  font-size: 5rem;
+  text-align: center;
+  transform: translateY(-30%);
+  opacity: 0;
+}
+.hero-title-anm {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.hero-subtitle {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-30%);
+}
+
+.hero-subtitle-anm {
+  animation: fadeInUpSub 1.5s ease-out forwards;
+  animation-delay: 500ms;
+}
+@keyframes fadeInUpSub {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-container a {
+  width: 100%;
+  display: flex;
+}
+.btn {
+  --padding-y: 1rem;
+  --padding-x: 2rem;
+  all: unset;
+  padding: var(--padding-y) var(--padding-x);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  margin: 2rem 1rem;
+  opacity: 0;
+
+  cursor: pointer;
+}
+.btn-anm {
+  animation: button-animation 500ms ease-out forwards;
+  animation-delay: 1000ms;
+}
+@keyframes button-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.left {
+  background-color: #ff7315;
+  color: black;
+  transition: all 700ms;
+}
+
+.left:hover {
+  transform: translateY(10%);
+  background-color: #c55810;
+}
+
+.left:active {
+  background-color: #411a00;
+}
+.right {
+  background-color: rgba(0, 0, 0, 0.479);
+  box-shadow: inset 0 0 0 3px #ff7315;
+  transition: all 700ms;
+}
+.right:hover {
+  background-color: rgba(0, 0, 0, 0.74);
+  transform: translateY(10%);
+}
+@media (max-width: 1200px), (max-height: 600px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .btn {
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons-container {
+    margin-top: 3.5rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 3rem;
+    box-sizing: border-box;
+  }
+  .btn {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+}

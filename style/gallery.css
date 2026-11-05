@@ -1,0 +1,168 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+}
+.gallery-title {
+  margin-bottom: 5rem;
+}
+.slider {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.list {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.list .item {
+  height: 500px;
+  min-width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  height: 500px;
+  width: auto;
+  border-radius: 8px;
+}
+.buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: #ff7315;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+/* Define the animation */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    background-color: #ff7315;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #91420c;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #ff7315;
+  }
+}
+
+/* Apply animation on the button */
+.buttons button.animate {
+  animation: bounce 0.3s ease;
+}
+
+.dots {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #ff7315;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1s;
+  cursor: pointer;
+}
+.dots .active {
+  width: 30px;
+}
+
+@media (max-width: 1200px) {
+  .slider {
+    width: 100%;
+    height: 550px;
+  }
+  .list .item {
+    height: 500px;
+  }
+
+  .item img {
+    height: 500px;
+  }
+  .dots li {
+    width: 7px;
+    height: 7px;
+    margin: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .buttons button {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+  }
+  .dots li {
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 450px;
+  }
+  .list .item {
+    height: 400px;
+  }
+
+  .item img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .list .item {
+    width: 100vw;
+    margin-right: 10rem;
+  }
+  .dots .active {
+    width: 15px;
+  }
+  .gallery-title {
+    margin-bottom: 2rem;
+  }
+  .gallery {
+    padding: 0px;
+  }
+}

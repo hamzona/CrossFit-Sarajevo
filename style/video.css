@@ -1,0 +1,56 @@
+.video-container {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.video-container.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-container iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.cancle-icon {
+  position: absolute;
+  right: 10rem;
+  top: 3rem;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.cancle-icon:active {
+  color: #ff7315;
+}
+
+@media (max-height: 850px) {
+  .cancle-icon {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .cancle-icon {
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+  }
+  .video-container iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .video-container iframe {
+    height: 200px;
+  }
+}

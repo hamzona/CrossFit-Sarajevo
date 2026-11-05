@@ -1,0 +1,94 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+*,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  font-family: inter;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+.overflow-x-on-mobile-phone-hidden {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 0rem 5rem; */
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.reveal {
+  transform: translateY(-20%);
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+.element-revealed {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.content-container img.img-revealed {
+  transition-delay: 400ms;
+  opacity: 1;
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .main-container {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .reveal {
+    transform: translateY(-10%);
+  }
+  .element-revealed {
+    transform: translateY(0%);
+  }
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main-container {
+    padding: 0 1.3rem;
+  }
+}
