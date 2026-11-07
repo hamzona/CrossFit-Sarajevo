@@ -32,8 +32,13 @@
   }
 }
 @media (max-width: 750px) {
+
+  .promotion-section{
+        margin-top: 3rem;
+  }
   .promotion-section .promotion-title {
     font-size: 1.2rem;
+
   }
   .promotion-section img {
     height: 50px;
@@ -50,7 +55,6 @@
     font-size: 0.9rem;
   }
   .promotion-section {
-    margin-top: 3rem;
     margin-bottom: 3rem;
   }
 }
