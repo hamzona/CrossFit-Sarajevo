@@ -40,11 +40,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  gap: clamp(1rem, 3vw, 2.5rem);
 }
 .link {
   font-weight: 800;
   font-size: 1.1rem;
+  white-space: nowrap;
   transition: 300ms ease-out;
   cursor: pointer;
 }
@@ -53,27 +54,12 @@
   color: #ff7315;
 }
 @media (max-width: 1200px) {
-  .links-container {
-    width: 30%;
-  }
   .link {
     font-size: 0.9rem;
   }
   .logo {
     height: 4rem;
     width: 5rem;
-  }
-}
-
-@media (max-width: 1080px) {
-  .links-container {
-    width: 45%;
-  }
-}
-
-@media (max-width: 800px) {
-  .links-container {
-    width: 55%;
   }
 }
 
